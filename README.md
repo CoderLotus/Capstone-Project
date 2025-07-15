@@ -91,10 +91,6 @@ graph TD
     - Vehicle types are assigned weights: car=1.0, bike=0.7, truck=1.5
     - Congestion and special day indicators scaled appropriately.
 
-### Report (Optional)
-
-You can include a PDF report with model derivations and graphs.
-
 ### Working Code
 
 The notebook:
