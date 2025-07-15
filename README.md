@@ -14,7 +14,7 @@ My models are implemented using only NumPy, Pandas, and Pathway, simulating a fu
 | Bokeh                 | Real-time interactive visualizations  |
 | Google Colab          | Code development and execution platform|
 
-### 🧠 Architecture Diagram
+### Architecture Diagram
 
 ```mermaid
 graph TD
@@ -30,9 +30,9 @@ graph TD
     E --> G[Suggested Rerouting Logic]
 ```
 
-### 🔄 Project Architecture & Workflow
+### Project Architecture & Workflow
 
-**📊 Dataset**
+** Dataset**
 
 - 14 parking lots, 73 days, 18 half-hour time points (8:00 AM – 4:30 PM daily)
 - **Features:**
@@ -40,7 +40,7 @@ graph TD
     - **Vehicle:** car/bike/truck
     - **Environment:** congestion level, special day
 
-**🛠️ Model Pipeline**
+** Model Pipeline**
 
 - **Model 1 (Baseline):** Price increases linearly with occupancy.
   
@@ -56,23 +56,23 @@ graph TD
     - Considers competitor prices using spatial proximity.
     - Enables rerouting suggestions if nearby lots are cheaper/available.
 
-**🌐 Real-Time Simulation**
+** Real-Time Simulation**
 
 - Implemented via Pathway, simulating delayed streaming data.
 - Emulates real-world ingestion and prediction, step-by-step.
 
-**📈 Visualization**
+** Visualization**
 
 - Interactive Bokeh plots for:
     - Individual lot pricing vs. time
     - Competitor comparison
     - Demand fluctuations
 
-**🚦 Rerouting Logic (Optional)**
+** Rerouting Logic (Optional)**
 
 - Suggests redirecting vehicles if the current lot is full and nearby alternatives are cheaper.
 
-### 📂 File Structure
+###  File Structure
 
 ```
 .
@@ -82,7 +82,7 @@ graph TD
 └── README.md                # This file
 ```
 
-### 📃 Additional Documentation
+### Additional Documentation
 
 - All models are built from scratch without using any ML libraries.
 - **Assumptions made:**
@@ -91,11 +91,11 @@ graph TD
     - Vehicle types are assigned weights: car=1.0, bike=0.7, truck=1.5
     - Congestion and special day indicators scaled appropriately.
 
-### 📑 Report (Optional)
+### Report (Optional)
 
 You can include a PDF report with model derivations and graphs.
 
-### ✅ Working Code
+### Working Code
 
 The notebook:
 - Is fully implemented and functional.
